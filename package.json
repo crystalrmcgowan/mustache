@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4.15.3",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "private": true
+}
