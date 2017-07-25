@@ -10,7 +10,16 @@ app.set('view engine', 'mustache')
 
 //Listening on root
 app.get('/todo/', function (req, res) {
-  // TODO write your code here
+    const data = {
+      list: [
+      { checked: false, label: 'Learn Node Basics' },
+      { checked: "checked", label: 'Learn Express Basics' },
+      { checked: "checked", label: 'Learn Mustache' },
+      { checked: false, label: 'Learn HTML forms with Express' },
+      { checked: false, label: 'Learn about Authentication' }
+      ]
+    }
+    res.render('todo', data)
 })
 
 app.listen(3000, function () {
